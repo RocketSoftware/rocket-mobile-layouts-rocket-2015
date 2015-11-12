@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121004" modelVersion="1.0" ?>
+<page>
+   <id>page</id>
+   <title class="rmc-page">${App.ApplicationTitle}</title>
+   <navigationBarColor>24</navigationBarColor>
+   <backgroundImage>Resources/background.png</backgroundImage>
+   <backgroundPosition>Bottom</backgroundPosition>
+   <controls>
+      <Button>
+         <id>Button1</id>
+         <label class="custom-button-red">Delete</label>
+         <backgroundColor>3</backgroundColor>
+         <textColor>16</textColor>
+      </Button>
+      <Button>
+         <id>Button2</id>
+         <label>Button2</label>
+         <customCssClass>rmc-button</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+         <backgroundColor>20</backgroundColor>
+         <textColor>16</textColor>
+      </Button>
+      <Label>
+         <id>Label1</id>
+         <value>Label1</value>
+         <customCssClass>rmc-label</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Label>
+      <Image>
+         <id>Image1</id>
+         <customCssClass>rmc-image</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Image>
+      <Toggle>
+         <id>Toggle2</id>
+         <customCssClass>rmc-toggle</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Toggle>
+      <TextField>
+         <id>TextField1</id>
+         <customCssClass>rmc-textfield</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </TextField>
+      <PasswordField>
+         <id>PasswordField1</id>
+         <customCssClass>rmc-passwordfield</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+         <placeholder>Enter your password ...</placeholder>
+      </PasswordField>
+      <TextArea>
+         <id>TextArea1</id>
+         <customCssClass>rmc-textarea</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </TextArea>
+      <CheckBox>
+         <id>CheckBox1</id>
+         <customCssClass>rmc-checkbox</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </CheckBox>
+      <RadioButton>
+         <id>RadioButton1</id>
+         <customCssClass>rmc-radiobutton</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+         <groupId>1</groupId>
+      </RadioButton>
+      <Slider>
+         <id>Slider1</id>
+         <customCssClass>rmc-slider</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Slider>
+      <Selectbox>
+         <id>Selectbox1</id>
+         <customCssClass>rmc-selectbox</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+         <selectboxItems>
+            <selectboxItem>1</selectboxItem>
+            <selectboxItem>2</selectboxItem>
+            <selectboxItem>3</selectboxItem>
+         </selectboxItems>
+      </Selectbox>
+      <List>
+         <id>List1</id>
+         <customCssClass>rmc-list</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </List>
+      <Toggle>
+         <id>Toggle1</id>
+         <customCssClass>rmc-toggle</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Toggle>
+   </controls>
+</page>

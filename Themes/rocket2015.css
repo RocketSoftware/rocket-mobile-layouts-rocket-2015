@@ -1,0 +1,163 @@
+.rmc-page {
+    font-family: 'oxygen', Arial;
+    font-size: 24px;
+	color: white;
+}
+
+.custom-button-red {
+    font-family: 'oxygen', Arial;
+    font-size: 16px;
+	color: white;
+}
+
+.rmc-toolbar {
+}
+
+.rmc-button {
+}
+
+.rmc-picker-buttons {
+}
+
+.rmc-label {
+    font-family: 'oxygen', Arial;
+	color: #0F0E9F;
+} 
+
+.rmc-textfield, .mobile input, .mobile .text-area {
+    font-family: 'oxygen';
+    font-size: 32;
+	color: #0F0E9F;
+}
+
+.rmc-textarea {
+    font-family: 'oxygen';
+	color: #0F0E9F;
+}
+
+.rmc-passwordfield {
+    font-family: 'oxygen', Arial;
+	color: #0F0E9F;
+	}
+
+.rmc-image {
+}
+
+.rmc-barchart {
+}
+
+.rmc-checkbox {
+}
+
+.rmc-checkbox:after, .checkbox:after {
+	border-color: #69A600;
+}
+
+.rmc-datepicker {
+}
+
+.rmc-doughnutchart {
+}
+
+.rmc-grid {
+}
+
+.rmc-linechart {
+}
+
+.rmc-list {
+}
+
+.rmc-map {
+}
+
+.rmc-passwordfield {
+}
+
+.rmc-picker {	
+} 
+
+.rmc-datepicker {
+}
+
+.rmc-piechart {
+}
+
+.rmc-polarchart {
+}
+
+.rmc-radarchart {
+}
+
+.rmc-radiobutton {
+}
+
+.rmc-radiobutton:after, .radio:after {
+	background-color: #69A600;
+}
+
+.rmc-selectbox {
+}
+
+.rmc-slider {
+}
+
+.slider>div {
+	background-color: #69A600;
+}
+
+.rmc-toggle {
+}
+
+.rmc-togglebutton.gap.checked {
+	background-color: #69A600;	
+}
+
+.rmc-togglebutton {
+}
+
+.rmc-togglebutton-switch {
+}
+
+.rmc-togglebutton-label {
+}
+
+/* change the color of the switches */
+.rmc-togglebutton.gap .rmc-togglebutton-label--on {
+}
+
+/* change the color of only the ON switch */
+.rmc-togglebutton.gap.checked .rmc-togglebutton-label--on {
+	color: white;
+}
+
+
+.rmc-togglebutton:not(.checked) .rmc-togglebutton-label--off {
+	color: #0F0E9F;
+}
+
+.rmc-carousel {
+}
+
+.rmc-vertical {
+}
+
+.rmc-horizontal {
+}
+
+.rmc-pane {
+}
+
+.rmc-form {
+}
+
+.rmc-drawer {
+}
+
+.rmc-toolbar {
+}
+
+
+
+
+

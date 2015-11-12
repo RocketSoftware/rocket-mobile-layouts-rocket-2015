@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504070555" modelVersion="1.0" ?>
+<page>
+   <id>TabBar</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <TabBar>
+         <id>TabBar1</id>
+         <position>Top</position>
+         <controls/>
+         <customCssClass>rmc-tabbar</customCssClass>
+      </TabBar>
+   </controls>
+</page>

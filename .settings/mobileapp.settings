@@ -1,0 +1,8 @@
+ApplicationVersion = 1.0.0
+GenerateApplicationBundle = true
+LicenseManagers = {"activeLicenseManager":"Development","licenseManagers":{"Development":"https://rsmob.rocketsoftware.com/internal"}}
+ApplicationBundle = com.rs.templates.rocket2015
+ApplicationIdentity = 8dad6d4b-ca9d-4ff6-8ffc-69dccf5fb39b
+ApplicationTitle = Rocket 2015
+ApplicationVendor = com.rs.templates
+RMABVersion = 2.2.0.v20151112-203

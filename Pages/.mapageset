@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511111002" modelVersion="1.0" ?>
+<page_set>
+   <DefaultPage>page</DefaultPage>
+   <Theme>automatic(Themes/rocket2015.css)</Theme>
+</page_set>

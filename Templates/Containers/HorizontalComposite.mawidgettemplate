@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504070555" modelVersion="1.0" ?>
+<page>
+   <id>HorizontalComposite</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <HorizontalComposite>
+         <id>HorizontalComposite1</id>
+         <customCssClass>rmc-horizontal</customCssClass>
+      </HorizontalComposite>
+   </controls>
+</page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504011315" modelVersion="1.0" ?>
+<page>
+   <id>List</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <List>
+         <id>List1</id>
+         <customCssClass>rmc-list</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </List>
+   </controls>
+</page>

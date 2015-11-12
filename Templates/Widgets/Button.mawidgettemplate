@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121004" modelVersion="1.0" ?>
+<page>
+   <id>Button</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <Button>
+         <id>Button1</id>
+         <label>Button1</label>
+         <customCssClass>rmc-button</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+         <backgroundColor>20</backgroundColor>
+         <textColor>16</textColor>
+      </Button>
+   </controls>
+</page>

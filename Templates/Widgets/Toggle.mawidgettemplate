@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121004" modelVersion="1.0" ?>
+<page>
+   <id>Toggle</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <Toggle>
+         <id>Toggle1</id>
+         <customCssClass>rmc-toggle</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </Toggle>
+   </controls>
+</page>

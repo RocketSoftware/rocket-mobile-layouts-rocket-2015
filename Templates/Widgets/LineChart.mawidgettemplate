@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504011315" modelVersion="1.0" ?>
+<page>
+   <id>LineChart</id>
+   <title>${App.ApplicationTitle}</title>
+   <controls>
+      <LineChart>
+         <id>LineChart1</id>
+         <customCssClass>rmc-linechart</customCssClass>
+         <marginCustom value="true">
+            <marginTop>4</marginTop>
+         </marginCustom>
+      </LineChart>
+   </controls>
+</page>

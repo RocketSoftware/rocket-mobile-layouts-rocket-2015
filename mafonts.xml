@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511111002" modelVersion="1.0" ?>
+<fonts>
+   <font name="oxygen" src="Resources/fonts/oxygen.woff"/>
+</fonts>
