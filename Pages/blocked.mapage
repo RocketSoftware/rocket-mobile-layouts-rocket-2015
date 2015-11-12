@@ -2,7 +2,7 @@
 <?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121004" modelVersion="1.0" ?>
 <page>
    <id>blocked</id>
-   <title>Blocked</title>
+   <title class="rmc-page">Blocked</title>
    <navigationBarColor>24</navigationBarColor>
    <backgroundImage>Resources/background.png</backgroundImage>
    <backgroundPosition>Bottom</backgroundPosition>
