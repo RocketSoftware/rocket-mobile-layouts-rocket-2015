@@ -13,7 +13,10 @@
 .rmc-toolbar {
 }
 
-.rmc-button {
+.rmc-button, .button {
+    font-family: 'oxygen', Arial;
+    font-size: 16px;
+    color: #0F0E9F;
 }
 
 .rmc-picker-buttons {
