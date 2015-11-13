@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504011315" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121121" modelVersion="1.0" ?>
 <page>
    <id>RadioButton</id>
    <title>${App.ApplicationTitle}</title>
@@ -11,6 +11,7 @@
             <marginTop>4</marginTop>
          </marginCustom>
          <groupId>1</groupId>
+         <transparency>10</transparency>
       </RadioButton>
    </controls>
 </page>

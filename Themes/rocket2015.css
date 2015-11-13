@@ -4,6 +4,38 @@
 	color: white;
 }
 
+/* This is the bar at the top of the page */
+.navigationbar {
+	background-color: #0F0E9F;
+	color: #ffffff;
+	height: 44px;
+}
+
+.navigationbar>.label {
+	height: 1.5rem;
+	line-height: 1.5rem
+}
+
+.navigationbar-button, .navigationbar-backbutton {
+	background-color: #0F0E9F;
+	color: #ffffff;
+	height: 2rem;
+	margin-top: 0.5rem;
+}
+
+/* No blue background when selecting */
+.navigationbar-button:active, .navigationbar-backbutton:active {
+	background-color: #0F0E9F;
+	/* 0px does show */
+	border-width: 0px 0px 0px 0px;
+	border-color: #0F0E9F;
+}
+
+.navigationbar-button, .navigationbar-backbutton {
+	padding-bottom: 11px;
+}
+
+
 .custom-button-red {
     font-family: 'oxygen', Arial;
     font-size: 16px;

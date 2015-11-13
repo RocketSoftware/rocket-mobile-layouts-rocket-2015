@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201504011315" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511121121" modelVersion="1.0" ?>
 <page>
    <id>Grid</id>
    <title>${App.ApplicationTitle}</title>
@@ -10,6 +10,7 @@
          <marginCustom value="true">
             <marginTop>4</marginTop>
          </marginCustom>
+         <transparency>10</transparency>
       </Grid>
    </controls>
 </page>
