@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511130936" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201512091424" modelVersion="1.0" ?>
 <page>
    <id>Default</id>
    <title>${App.ApplicationTitle}</title>
-   <navigationBarColor>24</navigationBarColor>
    <backgroundImage>Resources/background.png</backgroundImage>
-   <backbutton value="true">
-      <id>backbutton1</id>
-      <handlers>
-         <event
-               desc="backbutton1_OnBack"
-               name="back">
-            <handler>
-               <action type="BACK">
-                  <transition>slide</transition>
-               </action>
-            </handler>
-         </event>
-      </handlers>
-   </backbutton>
    <backgroundPosition>Bottom</backgroundPosition>
    <controls/>
 </page>
