@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.qualifier" modelVersion="1.0" ?>
+<page>
+   <id>Login</id>
+   <title>Enter your PIN</title>
+   <controls>
+      <FormComposite>
+         <id>FormComposite</id>
+         <controls>
+            <Label>
+               <id>ACTIONLABEL</id>
+               <value>${PIN_ACTION_LABEL}</value>
+            </Label>
+            <TextField>
+               <id>PIN</id>
+               <labelPosition>None</labelPosition>
+            </TextField>
+            <Label>
+               <id>ERRORLABEL</id>
+               <value>${PIN_ERROR_LABEL}</value>
+               <textColor>3</textColor>
+            </Label>
+            <Button>
+               <id>Submit</id>
+               <label>Submit</label>
+            </Button>
+            <Button>
+               <id>LOGOUT</id>
+               <label>Logout</label>
+               <visible>${PIN_LOGOUT_VISIBLE}</visible>
+            </Button>
+         </controls>
+         <labelWidth>0</labelWidth>
+      </FormComposite>
+   </controls>
+</page>
