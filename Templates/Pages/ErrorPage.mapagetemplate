@@ -20,7 +20,7 @@
                   <marginBottom>20</marginBottom>
                   <marginTop>20</marginTop>
                </marginCustom>
-               <value>&lt;h4&gt;${ERROR_MESSAGE}&lt;/h4&gt;</value>
+               <value>&lt;h4 class=\&apos;rmc-error\&apos;&gt;${App.AuthError.message}&lt;/h4&gt;</value>
             </Label>
             <Button>
                <id>Retry</id>
@@ -28,13 +28,6 @@
                   <marginTop>10</marginTop>
                </marginCustom>
                <label>Retry</label>
-            </Button>
-            <Button>
-               <id>Skip</id>
-               <marginCustom value="true">
-                  <marginTop>10</marginTop>
-               </marginCustom>
-               <label>Skip to application (${RETRIES_NUMBER} retries left)</label>
             </Button>
          </controls>
       </VerticalComposite>
