@@ -2,7 +2,7 @@
 <?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511111002" modelVersion="1.0" ?>
 <page>
    <id>Update</id>
-   <title>${UPDATE_PAGE_TITLE}</title>
+   <title>Update available</title>
    <navigationBarColor>24</navigationBarColor>
    <backgroundImage>Resources/background.png</backgroundImage>
    <backgroundPosition>Bottom</backgroundPosition>
@@ -15,8 +15,14 @@
          <alignX>Center</alignX>
          <controls>
             <Label>
-               <id>Lbl1</id>
-               <value>&lt;h2 style=&quot;text-align: center;&quot;&gt;${UPDATE_LABEL_TEXT}&lt;/h2&gt;</value>
+               <id>UpdateRequiredLabel</id>
+               <value>&lt;h2 style=\&apos;text-align: center;&apos;&gt;New version is available and update is required&lt;/h2&gt;</value>
+               <visible>${App.UpdateInfo.required}</visible>
+            </Label>
+            <Label>
+               <id>UpdateAvailableLabel</id>
+               <value>&lt;h2 style=\&apos;text-align: center;&apos;&gt;New version is available&lt;/h2&gt;</value>
+               <visible>${!App.UpdateInfo.required}</visible>
             </Label>
             <Button>
                <id>BtnDownload</id>
@@ -24,18 +30,27 @@
                <marginCustom>
                   <marginTop>10</marginTop>
                </marginCustom>
+               <visible>${App.UpdateInfo.url}</visible>
                <handlers>
                   <event
                         desc="BtnDownload_OnTap"
                         name="tap">
                      <handler>
                         <action type="OPEN_URL">
-                           <url>${UPDATE_URL}</url>
+                           <url>${App.UpdateInfo.url}</url>
                            <target>system</target>
                         </action>
                      </handler>
                   </event>
                </handlers>
+            </Button>
+            <Button>
+               <id>BtnProceed</id>
+               <label>I will update later, proceed to next page</label>
+               <marginCustom>
+                  <marginTop>10</marginTop>
+               </marginCustom>
+               <visible>${!App.UpdateInfo.required}</visible>
             </Button>
          </controls>
       </VerticalComposite>
