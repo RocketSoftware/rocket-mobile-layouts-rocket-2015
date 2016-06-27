@@ -6,33 +6,50 @@
    <backgroundImage>Resources/background.png</backgroundImage>
    <backgroundPosition>Bottom</backgroundPosition>
    <controls>
-      <FormComposite>
-         <id>FormComposite</id>
+      <VerticalComposite>
+         <id>VerticalComposite</id>
+         <flex>1</flex>
          <controls>
-            <Label>
-               <id>ACTIONLABEL</id>
-               <value>${PIN_ACTION_LABEL}</value>
-            </Label>
-            <TextField>
-               <id>PIN</id>
-               <labelPosition>None</labelPosition>
-            </TextField>
-            <Label>
-               <id>ERRORLABEL</id>
-               <value>${PIN_ERROR_LABEL}</value>
-               <textColor>3</textColor>
-            </Label>
-            <Button>
-               <id>Submit</id>
-               <label>Submit</label>
-            </Button>
-            <Button>
-               <id>LOGOUT</id>
-               <label>Logout</label>
-               <visible>${PIN_LOGOUT_VISIBLE}</visible>
-            </Button>
+            <FormComposite>
+               <id>FormComposite</id>
+               <controls>
+                  <Label>
+                     <id>ACTIONLABEL</id>
+                     <value>${PIN_ACTION_LABEL}</value>
+                  </Label>
+                  <PasswordField>
+                     <id>PIN</id>
+                     <labelPosition>None</labelPosition>
+                  </PasswordField>
+                  <Label>
+                     <id>ERRORLABEL</id>
+                     <value>${PIN_ERROR_LABEL}</value>
+                     <visible>${PIN_ERROR_LABEL}</visible>
+                     <textColor>3</textColor>
+                  </Label>
+                  <Button>
+                     <id>Submit</id>
+                     <label>Submit</label>
+                  </Button>
+                  <Button>
+                     <id>LOGOUT</id>
+                     <label>Logout</label>
+                     <visible>${PIN_LOGOUT_VISIBLE}</visible>
+                     <handlers>
+                        <event
+                              desc="LOGOUT_OnTap"
+                              name="tap">
+                           <handler>
+                              <action type="LOGOUT"/>
+                           </handler>
+                        </event>
+                     </handlers>
+                  </Button>
+               </controls>
+               <labelWidth>0</labelWidth>
+            </FormComposite>
          </controls>
-         <labelWidth>0</labelWidth>
-      </FormComposite>
+         <alignY>Top</alignY>
+      </VerticalComposite>
    </controls>
 </page>
