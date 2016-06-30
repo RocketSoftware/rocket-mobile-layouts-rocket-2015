@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201512091424" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.qualifier" modelVersion="1.1" ?>
 <page>
    <id>Login</id>
    <title>Enter your PIN</title>
-   <backgroundImage>Resources/background.png</backgroundImage>
-   <backgroundPosition>Bottom</backgroundPosition>
    <controls>
       <VerticalComposite>
          <id>VerticalComposite</id>
@@ -36,11 +34,9 @@
                      <label>Logout</label>
                      <visible>${PIN_LOGOUT_VISIBLE}</visible>
                      <handlers>
-                        <event
-                              desc="LOGOUT_OnTap"
-                              name="tap">
+                        <event desc="LOGOUT_OnTap" name="tap">
                            <handler>
-                              <action type="LOGOUT"/>
+                              <action type="LOGOUT" />
                            </handler>
                         </event>
                      </handlers>
