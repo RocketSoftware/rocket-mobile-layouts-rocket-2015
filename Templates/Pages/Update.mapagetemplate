@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.201511111002" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.qualifier" modelVersion="1.1" ?>
 <page>
    <id>Update</id>
    <title>Update available</title>
-   <navigationBarColor>24</navigationBarColor>
-   <backgroundImage>Resources/background.png</backgroundImage>
-   <backgroundPosition>Bottom</backgroundPosition>
    <controls>
       <VerticalComposite>
          <id>Container1</id>
          <marginCustom>
             <marginTop>50</marginTop>
          </marginCustom>
-         <alignX>Center</alignX>
+         <alignX>None</alignX>
          <controls>
             <Label>
                <id>UpdateRequiredLabel</id>
@@ -24,35 +21,130 @@
                <value>&lt;h2 style=\&apos;text-align: center;&apos;&gt;New version is available&lt;/h2&gt;</value>
                <visible>${!App.UpdateInfo.required}</visible>
             </Label>
-            <Button>
-               <id>BtnDownload</id>
-               <label>Download update</label>
-               <marginCustom>
-                  <marginTop>10</marginTop>
-               </marginCustom>
-               <visible>${App.UpdateInfo.url}</visible>
-               <handlers>
-                  <event
-                        desc="BtnDownload_OnTap"
-                        name="tap">
-                     <handler>
-                        <action type="OPEN_URL">
-                           <url>${App.UpdateInfo.url}</url>
-                           <target>system</target>
-                        </action>
-                     </handler>
-                  </event>
-               </handlers>
-            </Button>
-            <Button>
-               <id>BtnProceed</id>
-               <label>I will update later, proceed to next page</label>
-               <marginCustom>
-                  <marginTop>10</marginTop>
-               </marginCustom>
-               <visible>${!App.UpdateInfo.required}</visible>
-            </Button>
          </controls>
       </VerticalComposite>
+      <HorizontalComposite>
+         <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+         <id>HorizontalComposite1</id>
+         <paddingCustom>
+            <paddingBottom>5</paddingBottom>
+            <paddingTop>25</paddingTop>
+         </paddingCustom>
+         <controls>
+            <HorizontalComposite>
+               <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+               <id>HorizontalComposite2</id>
+               <minWidth>100</minWidth>
+               <controls>
+                  <Label>
+                     <template>Templates/Widgets/Label.mawidgettemplate</template>
+                     <id>Label1</id>
+                     <value>&lt;h4&gt;Version:&lt;/h4&gt;</value>
+                  </Label>
+               </controls>
+            </HorizontalComposite>
+            <Label>
+               <template>Templates/Widgets/Label.mawidgettemplate</template>
+               <id>Label2</id>
+               <value>&lt;h4&gt;${App.UpdateInfo.version}&lt;/h4&gt;</value>
+            </Label>
+         </controls>
+      </HorizontalComposite>
+      <HorizontalComposite>
+         <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+         <id>HorizontalComposite3</id>
+         <paddingCustom>
+            <paddingBottom>5</paddingBottom>
+         </paddingCustom>
+         <controls>
+            <HorizontalComposite>
+               <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+               <id>HorizontalComposite4</id>
+               <minWidth>100</minWidth>
+               <controls>
+                  <Label>
+                     <template>Templates/Widgets/Label.mawidgettemplate</template>
+                     <id>Label3</id>
+                     <value>&lt;h4&gt;Size:&lt;/h4&gt;</value>
+                  </Label>
+               </controls>
+            </HorizontalComposite>
+            <Label>
+               <template>Templates/Widgets/Label.mawidgettemplate</template>
+               <id>Label4</id>
+               <value>&lt;h4&gt;${App.UpdateInfo.size}&lt;/h4&gt;</value>
+            </Label>
+         </controls>
+      </HorizontalComposite>
+      <HorizontalComposite>
+         <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+         <id>HorizontalComposite5</id>
+         <paddingCustom>
+            <paddingBottom>15</paddingBottom>
+         </paddingCustom>
+         <controls>
+            <HorizontalComposite>
+               <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+               <id>HorizontalComposite6</id>
+               <controls>
+                  <Label>
+                     <template>Templates/Widgets/Label.mawidgettemplate</template>
+                     <id>Label5</id>
+                     <value>&lt;h4&gt;Date:&lt;/h4&gt;</value>
+                  </Label>
+               </controls>
+               <minWidth>100</minWidth>
+            </HorizontalComposite>
+            <Label>
+               <template>Templates/Widgets/Label.mawidgettemplate</template>
+               <id>Label6</id>
+               <value>&lt;h4&gt;${App.UpdateInfo.date}&lt;/h4&gt;</value>
+            </Label>
+         </controls>
+      </HorizontalComposite>
+      <HorizontalComposite>
+         <template>Templates/Containers/HorizontalComposite.mawidgettemplate</template>
+         <id>HorizontalComposite7</id>
+         <paddingCustom>
+            <paddingTop>5</paddingTop>
+            <paddingBottom>15</paddingBottom>
+         </paddingCustom>
+         <visible>${App.UpdateInfo.text}</visible>
+         <controls>
+            <Label>
+               <template>Templates/Widgets/Label.mawidgettemplate</template>
+               <id>Label7</id>
+               <value>&lt;h5&gt;${App.UpdateInfo.text}&lt;/h5&gt;</value>
+            </Label>
+         </controls>
+      </HorizontalComposite>
+      <Button>
+         <id>BtnDownload</id>
+         <label>Download update</label>
+         <marginCustom>
+            <marginTop>10</marginTop>
+         </marginCustom>
+         <visible>${App.UpdateInfo.url}</visible>
+         <handlers>
+            <event
+                  desc="BtnDownload_OnTap"
+                  name="tap">
+               <handler>
+                  <action type="OPEN_URL">
+                     <url>${App.UpdateInfo.url}</url>
+                     <target>system</target>
+                  </action>
+               </handler>
+            </event>
+         </handlers>
+      </Button>
+      <Button>
+         <id>BtnProceed</id>
+         <label>I will update later, proceed to next page</label>
+         <marginCustom>
+            <marginTop>10</marginTop>
+         </marginCustom>
+         <visible>${!App.UpdateInfo.required}</visible>
+      </Button>
    </controls>
 </page>
